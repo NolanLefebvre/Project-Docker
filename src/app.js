@@ -9,11 +9,17 @@ app.use(express.json());
 app.use("/tasks", taskRoutes);
 
 app.get("/", (req, res) => {
-  res.send("Todo API is running 🚀");
+  res.send("Todo API is running  ~@");
 });
 
 const PORT = 8080;
 
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+// ⚠️ IMPORTANT POUR LES TESTS (Jest / Supertest)
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Server running on http://localhost:${PORT}`);
+  });
+}
+
+// export pour les tests
+module.exports = app;
