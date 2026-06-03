@@ -136,17 +136,3 @@ Projet réalisé en mode solo avec une organisation type Agile.
 - [Jest](https://jestjs.io/)
 - [Supertest](https://github.com/ladjs/supertest)
 
----
-
-## 📌 Auteur
-
-Projet réalisé dans un contexte pédagogique **DevOps / Backend**.
-
----
-
-## 🚀 Améliorations possibles
-
-- [ ] Ajout d'une base de données (MongoDB ou MySQL)
-- [ ] Authentification utilisateur
-- [ ] CI/CD avec GitHub Actions
-- [ ] Frontend (React ou Angular)
